@@ -1,43 +1,27 @@
-ZRender
-=======
+# ZRender
 
-A lightweight graphic library which provides 2d draw for [Apache ECharts](https://github.com/apache/echarts).
+ZRender is a lightweight graphic library which provides 2d draw for
+[Apache ECharts](https://github.com/apache/echarts).
 
-[![](https://img.shields.io/github/actions/workflow/status/ecomfe/zrender/ci.yml)]() [![](https://img.shields.io/npm/dw/zrender.svg?label=npm%20downloads&style=flat)](https://www.npmjs.com/package/zrender) ![Commits Since 4.0.0](https://img.shields.io/github/commits-since/ecomfe/zrender/4.0.0.svg?colorB=%234c1&style=flat)
-
-## Documentation
-
-[https://ecomfe.github.io/zrender-doc/public/](https://ecomfe.github.io/zrender-doc/public/)
-
+This repository is the ThingsBoard-maintained fork of
+[zrender](https://github.com/ecomfe/zrender), consumed by the
+[ThingsBoard fork of Apache ECharts](https://github.com/thingsboard/echarts) as
+a GitHub archive tarball. Fork releases are tagged with a `-TB` version suffix.
+The fork carries a pointer-transformer fix on top of the upstream 5.5.0 release
+and commits the `lib` build output, which upstream generates only when
+publishing to npm, so that the GitHub archive tarball installs the way the npm
+package would; the `dist` bundles are rebuilt from this fork. See the Git
+history for details of the changes.
 
 ## License
 
-BSD 3-Clause License
+ZRender is licensed under the [New BSD License](LICENSE).
 
-Copyright (c) 2017, Baidu Inc.
-All rights reserved.
+Some files in this repository are licensed under the
+[Apache License, Version 2.0](licenses/LICENSE-Apache-2.0), some under the
+MIT License ([Zepto](licenses/LICENSE-MIT-Zepto),
+[snabbdom](licenses/LICENSE-MIT-snabbdom)), and the array diff helper is
+derived from jsdiff under the
+[New BSD License](licenses/LICENSE-BSD-3-Clause-jsdiff).
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, this
-  list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice,
-  this list of conditions and the following disclaimer in the documentation
-  and/or other materials provided with the distribution.
-
-* Neither the name of the copyright holder nor the names of its
-  contributors may be used to endorse or promote products derived from
-  this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+The original work is Copyright (c) 2017, Baidu Inc.
